@@ -58,7 +58,7 @@ StageStart.prototype.draw = function(canvas)
 			graphics.drawImage(img, this.xx, this.yy, 78, 14, 194, 208, 78, 14);
 			this.stageNum.draw("stage", 308, 208, level, false);
 			
-			sound.play("stageStart")
+			sound.play("rick")
 			this.num = false;
 			init();
 			draw();
