@@ -1,11 +1,11 @@
 //UTF-8
-var key = {};													//±£´æ°´¼üÐÅÏ¢
+var key = {};
 
-var num = new Num();											//Ò»ÇÐÊý×Ö
-var stageStart = new StageStart();								//¹Ø¿¨¿ªÊ¼
-var gamesOver = new GameOver();									//ÓÎÏ·½áÊø
+var num = new Num();
+var stageStart = new StageStart();
+var gamesOver = new GameOver();
 var gameStart = new GameStart();
-var food = new Food();											//½±Àø
+var food = new Food();
 var tankRun = new TankRun();
 
 var scoreBoard = new ScoreBoard();
@@ -13,22 +13,22 @@ var sound = new Sound();
 var firstLife = 3;
 
 var time;
-var tankNum = 0;												//Ì¹¿Ë³öÏÖÊý
-var level = 1;													//¹Ø¿¨
+var tankNum = 0;
+var level = 1;
 
 var playerNum = 1;
 
 
-var stopTime;													//ÔÝÍ£Ê±¼ä
-var homeTime;													//¼ÒÎÞµÐÊ±¼ä
+var stopTime;
+var homeTime;
 
-var startLocation = [192,0,384];								//Ì¹¿Ë³öÏÖÎ»ÖÃ
+var startLocation = [192,0,384];
 
-var tanks = [];													//Ì¹¿ËÊý×é
-var bullets = [];												//×Óµ¯Êý×é
-var hitFxs = [];												//×Óµ¯±¬Õ¨Êý×é
-var bombFxs = [];												//Ì¹¿Ë±¬Õ¨Êý×é
-var tankStarts = [];											//Ì¹¿Ë¿ªÊ¼Êý×é
+var tanks = [];
+var bullets = [];
+var hitFxs = [];
+var bombFxs = [];
+var tankStarts = [];
 var scoreNums = [];
 
 var player1,player2;
@@ -43,7 +43,7 @@ function main()
 	game = setInterval("loop()",21);
 }
 
-gamePaused = false; // Victor Fang 20151129, Pause state flag
+gamePaused = false;
 //game = setTimeout(loop, 1000 / 30);
 
 
@@ -138,7 +138,7 @@ document.onkeydown = function(e)
 			if(nextIntval == 300)
 			{
 				nextIntval = 100;
-				document.getElementById('fast-mode').innerHTML = "快速出兵模式开启";
+				document.getElementById('fast-mode').innerHTML = "";
 			}
 			else
 			{
@@ -334,7 +334,6 @@ function keyboardEvent()
 			else if(key[K_DOWN]) {player1.move(DOWN);}
 			else if(key[K_LEFT]) {player1.move(LEFT);}
 			else if(key[K_RIGHT]) {player1.move(RIGHT);}
-		  // Victor Fang 20151129, Fix SPACE / ENTER bug. 
 			if(key[K_SPACE] || key[K_ENTER]) {player1.shot();}
 
 			/*if(key[K_P]) {
@@ -431,7 +430,6 @@ function nextStage()
 	initStage();
 }
 
- // Victor Fang 20151129, Pause state flag
 function pauseGame() {
   if (!gamePaused) {
     //game = clearTimeout(game);

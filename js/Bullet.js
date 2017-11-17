@@ -207,7 +207,7 @@ Bullet.prototype.hitTanks = function()
 		{
 			var tankScore;
 			
-			if(this.type == 0)                                        //子弹是自己发射的
+			if(this.type == 0)
 			{
 				tanks[i].life --;
 				
@@ -293,7 +293,7 @@ function updataBullets()
 						if(i < j) {i --;}
 						else {i -= 2;}
 						
-						j = 1000;//退出循环
+						j = 1000;
 					}
 			}
 		}
@@ -305,13 +305,13 @@ function updataBullets()
 		
 		if(bullets[i].checkHit()) 
 		{
-			isHit = true;//碰到墙壁
+			isHit = true;
 		}
 		
 		if(bullets[i].hitTanks())  
 		{
 			isHit = true;
-		}//碰到坦克
+		}
 	
 
 		if(isHit && bullets[i]) 

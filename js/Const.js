@@ -31,7 +31,7 @@ var STATE_GAMEOVER = 4;
 var STATE_SELECT = 5;
 var STATE_GAMESTART = 6;
 
-var STATE_PAUSE = 7;  // VICTOR FANG
+var STATE_PAUSE = 7;
 
 
 var K_UP = 38;

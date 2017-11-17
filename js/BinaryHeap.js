@@ -1,7 +1,7 @@
 /**
  * Binary Heap
  *
- * @see http://eloquentjavascript.net/appendix2.html
+ *
  */
 function BinaryHeap(scoreFunction){
    /**
