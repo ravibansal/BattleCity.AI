@@ -1,6 +1,4 @@
-BattleCity.AI
+ClashofTanks
 =============
 
-A classic tank game with AI bots.
-
-http://juleswang.github.io/BattleCity.AI/
+Welcome to the world of tanks!!!
