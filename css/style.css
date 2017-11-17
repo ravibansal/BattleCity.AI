@@ -4,14 +4,14 @@ padding:0;
 }
 
 body {
-background-color:#333;
+background-color:#000;
 color:#ff9966;
 }
 
 
-a:link {color: #fff;text-decoration: underline;}
-a:visited {color: #f26;text-decoration: underline;}
-a:hover{color: #f00;text-decoration: underline;}
+a:link {color: #fff;text-decoration: none;}
+a:visited {color: #f26;text-decoration: none;}
+a:hover{color: #f00;text-decoration: none;}
 
 .container {
 width: 800px;
@@ -30,7 +30,7 @@ position: absolute;
 top: 420px;
 text-align: left;
 list-style: none outside none;
-left: -20px;
+left: -40px;
 }
 
 #player2 {
