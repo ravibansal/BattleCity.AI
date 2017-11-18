@@ -56,7 +56,9 @@ display:none;
 }
 
 #astar{
-margin: 100px 0px 0px 600px;
+position: absolute;
+top: 75px;
+right: 0px;
 }
 
 #author{
